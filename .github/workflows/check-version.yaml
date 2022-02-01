@@ -1,0 +1,14 @@
+name: Check version
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  check-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo git diff
+        run: |
+          ! git diff"
