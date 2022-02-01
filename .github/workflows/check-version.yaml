@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Echo git diff
         run: |
-          ! git diff"
+          ! git diff
