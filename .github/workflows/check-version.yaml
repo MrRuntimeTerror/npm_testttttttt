@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - some-folder
+      - "some-folder"
 
 jobs:
   check-version:
