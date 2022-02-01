@@ -22,3 +22,6 @@ jobs:
         id: changed-files
         run: |
           echo "::set-output name=yamls::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | grep .yaml$ | xargs)"
+      - name: Test print
+        run: |
+          echo "hello github actions"
