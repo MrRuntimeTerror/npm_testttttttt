@@ -21,8 +21,8 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - run: |
-          cd "package_b/"
           npm ci
           npm publish
+        working-directory: ./package_b/
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
