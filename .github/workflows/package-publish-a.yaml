@@ -8,7 +8,7 @@ on:
       - "package_a/**"
 
 jobs:
-  check-version:
+  publish-package:
     runs-on: ubuntu-latest
 
     steps:
